@@ -1,0 +1,68 @@
+.sidebar {
+    width: 200px;
+    height: 100%;
+    left: 0;
+    color: white;
+    border-right: 1px solid gray;
+    background: linear-gradient(135deg, #56ab2f, #78ffd6); /* Updated green gradient background */
+
+    @media (max-width: 768px) {
+        width: 30px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 12px;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+
+            @media (max-width: 768px) {
+                padding: 7px;
+            }
+
+            &:hover {
+                background-color: #56ab2f; /* Hover effect with green */
+                color: white; /* Text color when hovered */
+                transform: translateX(5px); /* Subtle slide effect */
+            }
+
+            a {
+                display: flex;
+                text-decoration: none;
+                color: white; /* Text color for links */
+
+                span {
+                    margin-left: 15px;
+
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dashboard-admin {
+    display: flex;
+    min-height: 80vh;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #6cae4d, #a0ffae); /* Updated green gradient background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Soft shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    &:hover {
+        transform: translateY(-5px); /* Slight lift effect on hover */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1); /* Enhanced shadow effect on hover */
+    }
+}

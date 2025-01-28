@@ -1,0 +1,98 @@
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full-screen height */
+  background: linear-gradient(135deg, #a8ff78, #78ffd6); /* Vibrant green gradient background */
+  font-family: 'Arial', sans-serif;
+
+  .auth-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #0e5532; /* Darker green for header text */
+      margin-bottom: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    form {
+      text-align: left;
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #0e5532; /* Matching label text color */
+      }
+
+      input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #a8ff78; /* Lighter green border */
+        border-radius: 8px;
+        font-size: 14px;
+        color: #555;
+        transition: border-color 0.3s, box-shadow 0.3s;
+
+        &:focus {
+          border-color: #78ffd6; /* Bright green focus border */
+          box-shadow: 0 0 5px rgba(120, 255, 214, 0.4); /* Matching glow */
+          outline: none;
+        }
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(90deg, #2a6f47, #78ffd6); /* Vibrant green gradient for button */
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+
+        &:hover {
+          background: linear-gradient(90deg, #3b854f, #6ff7b6); /* Slightly brighter gradient on hover */
+          transform: scale(1.03);
+        }
+
+        &:active {
+          transform: scale(1);
+        }
+      }
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #4f4f4f; /* Neutral gray text for footer */
+
+      a {
+        color: #2a6f47; /* Dark green for footer links */
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.course-study-page {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #a8ff78, #78ffd6); /* Matching green gradient theme */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    border-radius: 10px; /* Rounded edges for a softer look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  
+    h2, h4, h5 {
+      font-size: 24px;
+      color: #2a6f47; /* Complementary green for headings */
+      text-align: center;
+      margin: 15px 0;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Adds depth to text */
+    }
+  
+    h2 {
+      font-size: 28px; /* Larger font for the main heading */
+      margin-bottom: 20px;
+    }
+  
+    h4 {
+      font-size: 22px; /* Slightly smaller for subheadings */
+    }
+  
+    h5 {
+      font-size: 20px; /* Smaller for minor headings */
+      font-weight: normal;
+    }
+  
+    a {
+      text-decoration: none;
+      background-color: #e6f0e9; /* Soft green for buttons */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  
+      &:hover {
+        background-color: #f1f6f3; /* Darker green on hover */
+        transform: translateY(-2px);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      &:active {
+        transform: translateY(0);
+        box-shadow: 0px 3px 5px rgba(225, 222, 222, 0.1);
+      }
+    }
+  
+    /* Media query for responsiveness */
+    @media (max-width: 768px) {
+      padding: 30px 10px;
+  
+      h2, h4, h5 {
+        font-size: 20px; /* Adjusted font sizes for smaller screens */
+      }
+  
+      a {
+        font-size: 14px;
+        padding: 8px 16px; /* Smaller padding for smaller screens */
+      }
+    }
+  }
+  

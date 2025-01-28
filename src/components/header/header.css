@@ -1,0 +1,61 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(135deg, #a8ff78, #78ffd6); /* Green gradient theme */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #152516; /* Darker green */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #2a6f47; /* Bright green hover effect */
+    }
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  .link {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      gap: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      color: #152516; /* Dark green for links */
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: color 0.3s, background-color 0.3s, transform 0.3s ease; /* Add transform transition */
+
+      &:hover {
+        color: white;
+        background-color: #2a6f47; /* Matching green hover */
+        box-shadow: 0px 4px 6px rgba(42, 111, 71, 0.2);
+        transform: scale(1.1); /* Zoom effect */
+      }
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        padding: 5px 8px;
+      }
+    }
+  }
+}

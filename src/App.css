@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #a8ff78, #78ffd6); /* Green gradient theme */
+  color: #333;
+}
+
+.common-btn {
+  background-color: #2a6f47; /* Matching green button */
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.common-btn:hover {
+  color: #2a6f47; /* Invert colors */
+  background-color: #f1f1f1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.common-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .common-btn {
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #152516; /* Darker green */
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 1rem;
+  color: #152516; /* Complementary green */
+  text-align: center;
+  margin-top: 20px;
+  max-width: 600px;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}

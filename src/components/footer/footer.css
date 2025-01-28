@@ -1,0 +1,71 @@
+footer {
+  background: linear-gradient(135deg, #a8ff78, #78ffd6); /* Green gradient theme matching header */
+  color: #152516; /* Dark green text for consistency */
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  padding: 20px 0; /* Comfortable padding */
+  text-align: center;
+  position: relative;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1); /* Shadow at the top of the footer */
+
+  .footer-content {
+    text-align: center; /* Ensures text stays centered */
+    max-width: 700px; /* Slightly narrower content width */
+    margin: 0 auto;
+
+    p {
+      margin: 0 0 10px; /* Reduced spacing below paragraph */
+      font-size: 14px; /* Smaller font size */
+      font-weight: 400; /* Normalized font weight */
+      line-height: 1.4;
+
+      a {
+        text-decoration: underline;
+        color: #152516; /* Dark green link color */
+        transition: color 0.3s;
+
+        &:hover {
+          color: #2a6f47; /* Bright green hover effect */
+        }
+      }
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center; /* Centers icons horizontally */
+      gap: 10px; /* Reduced space between icons */
+      margin-top: 5px; /* Minimal spacing above icons */
+
+      a {
+        color: #152516; /* Match text color */
+        font-size: 20px; /* Slightly smaller icons */
+        transition: transform 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          color: #2a6f47; /* Bright green hover */
+          transform: scale(1.1); /* Subtle zoom on hover */
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 0; /* Further reduced padding for smaller screens */
+  }
+
+  .footer-content {
+    p {
+      font-size: 12px; /* Smaller font size for compact design */
+    }
+
+    .social-links {
+      gap: 8px; /* Adjusted spacing for smaller devices */
+      a {
+        font-size: 18px; /* Reduced icon size */
+      }
+    }
+  }
+}

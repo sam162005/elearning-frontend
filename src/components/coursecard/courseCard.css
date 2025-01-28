@@ -1,0 +1,122 @@
+.course-card {
+  background: linear-gradient(135deg, #ffffff, #e0ffe4); /* Subtle green gradient background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 270px;
+  transition: 0.3s ease-in-out;
+  transform: scale(1); /* Ensures smooth scaling */
+
+  &:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+
+  .course-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15); /* Adds depth to the image */
+  }
+
+  h3 {
+    font-size: 20px;
+    color: #2a6f47; /* Complementary green for the title */
+    margin-bottom: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  }
+
+  .instructor {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #1b3e30; /* Muted green for course details */
+    margin-bottom: 15px;
+    line-height: 1.6; /* Better readability */
+  }
+
+  .rating {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    .stars {
+      color: #f8b400; /* Gold for star ratings */
+      font-size: 16px;
+    }
+
+    .rating-value {
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+    }
+  }
+
+  .tags {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+
+  .price {
+    font-size: 16px;
+    color: #2a6f47; /* Green for the price */
+    font-weight: bold;
+  }
+
+  .common-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #25c759; /* Soft green for the button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transform to transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+
+    &:hover {
+      background-color: #3fa55b; /* Slightly darker green on hover */
+      transform: scale(1.1); /* Zoom effect */
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      transform: scale(1); /* Reset zoom on click */
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .delete-btn {
+    background-color: red; /* Red for delete button */
+    margin-top: 10px;
+    &:hover {
+      background-color: #c84c47; /* Slightly darker red on hover */
+    }
+  }
+}
