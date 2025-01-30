@@ -26,11 +26,12 @@ const Account = ({ user }) => {
             <h2>My Profile</h2>
             <div className="profile-info">
               <p>
-                <strong>Name:</strong> {user.name}
+                <strong>Name : </strong> {user.name}
               </p>
               <p>
-                <strong>Email:</strong> {user.email}
+                <strong>Email : </strong> {user.email}
               </p>
+              {user.role === "user" && (
               <button
                 onClick={() => navigate(`/${user._id}/dashboard`)}
                 className="profile-btn"
@@ -38,6 +39,7 @@ const Account = ({ user }) => {
                 <MdDashboard className="icon" />
                 Dashboard
               </button>
+              )}
               {user.role === "admin" && (
                 <button
                   onClick={() => navigate(`/admin/dashboard`)}

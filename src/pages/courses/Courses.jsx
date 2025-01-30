@@ -7,13 +7,15 @@ const Courses = () => {
   const { courses } = CourseData();
   const [searchQuery, setSearchQuery] = useState(""); // State to hold the search query
 
-  // Filter courses by category
+  // Extract unique categories
   const categories = [...new Set(courses.map((course) => course.category))];
 
-  // Sort courses by popular purchases (descending order)
-  const popularCourses = [...courses].sort((a, b) => b.purchases - a.purchases).slice(0, 5);
+  // Sort courses by most purchases (descending)
+  const popularCourses = [...courses]
+    .sort((a, b) => b.purchases - a.purchases)
+    .slice(0, 5);
 
-  // Filter courses based on search query
+  // Filter courses based on search input
   const filteredCourses = courses.filter((course) =>
     course.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -28,12 +30,12 @@ const Courses = () => {
           type="text"
           placeholder="Search Courses..."
           value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)} // Update search query on input change
+          onChange={(e) => setSearchQuery(e.target.value)}
         />
       </div>
 
-      {/* Display filtered courses if any */}
-      {filteredCourses.length > 0 && (
+      {/* Show Search Results Only When Searching */}
+      {searchQuery && filteredCourses.length > 0 && (
         <div className="filtered-courses">
           <h3>Search Results</h3>
           <div className="course-container">
@@ -58,25 +60,28 @@ const Courses = () => {
         </div>
       </div>
 
-      {/* Categories Section */}
+      {/* Course Categories Section */}
       <div className="course-categories">
-        {categories.map((category, index) => (
-          <div key={index} className="category-section">
-            <h3>{category}</h3>
-            <div className="course-container">
-              {/* Filter the courses that belong to the current category */}
-              {filteredCourses
-                .filter((course) => course.category === category)
-                .map((course) => (
-                  <CourseCard key={course._id} course={course} />
-                ))}
-              {/* If no filtered courses match, still show the category with no courses */}
-              {filteredCourses.filter((course) => course.category === category).length === 0 && (
-                <p>No filtered courses in this category!</p>
-              )}
+        {categories.map((category, index) => {
+          const categoryCourses = filteredCourses.filter(
+            (course) => course.category === category
+          );
+
+          return (
+            <div key={index} className="category-section">
+              <h3>{category}</h3>
+              <div className="course-container">
+                {categoryCourses.length > 0 ? (
+                  categoryCourses.map((course) => (
+                    <CourseCard key={course._id} course={course} />
+                  ))
+                ) : (
+                  <p>No courses available in this category.</p>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

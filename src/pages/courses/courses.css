@@ -1,18 +1,18 @@
 /* General styling for the courses page */
 .courses {
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
   min-height: 70vh;
-  background: linear-gradient(135deg, #a8ff78, #78ffd6);
+  background: hsla(210, 2%, 84%, 0.9);
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   font-size: 36px;
-  color: #152516;
-  margin-bottom: 30px;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+  color: #282828;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Search Bar Styling */
@@ -21,10 +21,10 @@ h2 {
 }
 
 .search-bar input {
-  padding: 10px 20px;
+  padding: 12px 20px;
   font-size: 16px;
   border-radius: 8px;
-  border: 2px solid #5ec980;
+  border: 2px solid #838584;
   width: 100%;
   max-width: 400px;
   outline: none;
@@ -32,7 +32,7 @@ h2 {
 }
 
 .search-bar input:focus {
-  border-color: #3fa55b;
+  border-color: #292929;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,32 +42,31 @@ h2 {
 }
 
 .filtered-courses h3 {
-  font-size: 28px;
-  color: #2a6f47;
-  margin-bottom: 20px;
+  font-size: 24px;
+  color: #282828;
   text-transform: uppercase;
 }
 
-.filtered-courses .course-container {
+/* Course Containers */
+.course-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
 
-/* Popular Courses Section */
+/* Popular Courses */
 .popular-courses {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .popular-courses h3 {
-  font-size: 28px;
-  color: #2a6f47;
-  margin-bottom: 20px;
+  font-size: 24px;
+  color: #282828;
   text-transform: uppercase;
 }
 
-/* Course Categories Section */
+/* Course Categories */
 .course-categories {
   display: flex;
   flex-direction: column;
@@ -79,51 +78,28 @@ h2 {
 }
 
 .category-section h3 {
-  font-size: 26px;
-  color: #2a6f47;
-  margin-bottom: 15px;
+  font-size: 22px;
+  color: #282828;
   text-transform: capitalize;
 }
 
-/* Styling for the course cards container */
-.course-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
-
-/* Individual course card styling */
+/* Course Cards */
 .course-item {
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 20px;
   width: 280px;
   text-align: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-  }
 }
 
-.badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: #ff7b54;
-  color: white;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 15px;
-  text-transform: uppercase;
+.course-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* Course Image */
 .course-image {
   width: 100%;
   height: 150px;
@@ -132,56 +108,37 @@ h2 {
   margin-bottom: 15px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 }
 
-h3 {
-  font-size: 22px;
-  color: #2a6f47;
-  margin-bottom: 10px;
+.course-image:hover {
+  transform: scale(1.05);
 }
 
-p {
-  font-size: 14px;
-  color: #1b3e30;
-  line-height: 1.5;
-}
-
-/* Button for the course card */
+/* Buttons */
 .course-btn {
-  display: inline-block;
-  margin-top: 15px;
   padding: 10px 20px;
   background-color: #5ec980;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 16px;
-  text-align: center;
   cursor: pointer;
-  text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-
-  &:hover {
-    background-color: #3fa55b;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-  }
-
-  &:active {
-    transform: translateY(0);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
 }
 
-/* Responsive adjustments */
+.course-btn:hover {
+  background-color: #3fa55b;
+  transform: translateY(-3px);
+}
+
+.course-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .courses {
-    padding: 60px 15px;
+    padding: 40px 15px;
   }
 
   .course-container {
@@ -189,10 +146,10 @@ p {
   }
 
   .category-section h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .popular-courses h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }

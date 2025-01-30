@@ -30,12 +30,7 @@ const CourseCard = ({ course }) => {
   };
 
   // Calculate rating stars
-  const ratingStars = (rating) => {
-    const stars = Array.from({ length: 5 }, (_, index) => 
-      index < rating ? "★" : "☆"
-    ).join(" ");
-    return stars;
-  };
+  
 
   return (
     <div className="course-card">
@@ -46,10 +41,7 @@ const CourseCard = ({ course }) => {
       <p className="price">Price: ₹{course.price}</p>
       
       {/* Rating Section */}
-      <div className="rating">
-        <span className="stars">{ratingStars(course.rating)}</span>
-        <span className="rating-value">{course.rating} / 5</span>
-      </div>
+      
 
       {/* Tags or Badges */}
       <div className="tags">
@@ -84,7 +76,7 @@ const CourseCard = ({ course }) => {
               onClick={() => navigate(`/course/study/${course._id}`)}
               className="common-btn"
             >
-              Study
+              Edit
             </button>
           )}
         </>

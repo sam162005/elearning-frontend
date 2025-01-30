@@ -1,65 +1,75 @@
 .admin-courses {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  
-    .left {
-      .dashboard-content {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin-top: 40px;
-        margin-left: 5px;
-      }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 20px;
+
+  .left {
+    flex: 2;
+
+    .dashboard-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
     }
-  
-    .right {
-      .course-form {
-        background-color: #ffffff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        width: 300px;
-        border: 1px solid #6cae4d; /* Green border to match the theme */
-        background: linear-gradient(135deg, #6cae4d, #a0ffae); /* Soft green gradient background */
-  
-        h2 {
-          font-size: 24px;
-          color: #152516; /* Dark green for the header */
-          margin-bottom: 15px;
+  }
+  .left h1{
+    text-shadow: 0 0 6px rgba(116, 118, 117, 0.4);
+  }
+
+  .right {
+    flex: 1;
+    padding: 10px;
+
+    .course-form {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border: 1px solid #3a3b3c;
+      background: linear-gradient(to right, #e8e8e8, #f2f2f2);
+
+      h2 {
+        font-size: 22px;
+        color: #1c361f;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      form {
+        text-align: left;
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #2d2d2d;
         }
-  
-        form {
-          text-align: left;
-  
-          label {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 15px;
-            color: #333; /* Dark gray for label text */
-          }
-  
-          input,
-          select {
-            width: 92%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #6cae4d; /* Green border for inputs */
-            border-radius: 5px;
-            background-color: #f4f4f4; /* Light gray background for inputs */
-          }
-  
-          input:focus,
-          select:focus {
-            outline: none;
-            border: 1px solid #a8ff78; /* Lighter green border on focus */
-            box-shadow: 0 0 5px rgba(42, 111, 71, 0.3); /* Green glow effect on focus */
-          }
+
+        input,
+        select {
+          width: 95%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          background-color: #f9f9f9;
+          transition: all 0.3s ease-in-out;
+        }
+
+        input:focus,
+        select:focus {
+          outline: none;
+          border-color: #131413;
+          box-shadow: 0 0 6px rgba(77, 78, 77, 0.4);
+          background-color: #c8c9c8;
         }
       }
     }
   }
-  
+}

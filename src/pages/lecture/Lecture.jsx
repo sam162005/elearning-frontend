@@ -252,7 +252,7 @@ const Lecture = ({ user }) => {
                       type="submit"
                       className="common-btn"
                     >
-                      {btnLoading ? "Please Wait..." : "Add"}
+                      {btnLoading ? "Please Wait..." : "ADD"}
                     </button>
                   </form>
                 </div>

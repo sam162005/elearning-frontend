@@ -3,14 +3,14 @@
   padding: 60px 20px;
   text-align: center;
   min-height: 65vh;
-  background: linear-gradient(135deg, #a8ff78, #78ffd6); /* Updated color theme */
+  background: rgb(146, 145, 145); /* Green gradient background from lecture.css */
   font-family: 'Roboto', sans-serif;
 }
 
 /* Title styling */
 .dashboard-title {
   font-size: 36px;
-  color: #2a6f47;
+  color: white;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -29,8 +29,8 @@
 /* No course message styling */
 .no-course-message {
   font-size: 20px;
-  color: #4f4f4f;
-  background: rgba(255, 255, 255, 0.8);
+  color: #f9f9f9; /* Light gray text from lecture.css */
+  background: rgba(94, 93, 93, 0.8); /* Semi-transparent background matching lecture.css */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -43,28 +43,35 @@
   background: #ffffff; /* Card background */
   border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Elevation */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Added background transition */
   padding: 20px;
   width: 280px;
   max-width: 100%;
 }
 
+/* Hover effect */
 .dashboard-content .course-card:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, #78ffd6, #a8ff78);
+  background: #ffffff; /* White background on hover */
+}
+
+/* Keep text color gray when hovering */
+.dashboard-content .course-card h3,
+.dashboard-content .course-card p {
+  color: #7d7777; /* Keep gray color for title and paragraph */
 }
 
 /* Typography inside course cards */
 .course-card h3 {
   font-size: 22px;
-  color: #2a6f47;
+  color: #7d7777; /* Light gray text */
   margin-bottom: 10px;
 }
 
 .course-card p {
   font-size: 16px;
-  color: #4f4f4f;
+  color: #696565; /* Light gray text */
 }
 
 /* Responsive styling */

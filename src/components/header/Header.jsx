@@ -1,11 +1,15 @@
 import React from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
+import logoImage from "../../images/logo-removebg-preview.png"; // Import your logo image
 
-const Header = ({ isAuth,user }) => {
+const Header = ({ isAuth, user }) => {
   return (
     <header>
-      <div className="logo">Mentora</div>
+      <div className="logo">
+        <img src={logoImage} alt="MentOur Logo" className="logo-image" />
+        MentOur
+      </div>
 
       <div className="link">
         <Link to={"/"}>Home</Link>

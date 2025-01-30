@@ -24,6 +24,7 @@ import AdminUsers from './admin/Users/AdminUsers';
 
 
 
+
 const App = () => {
   const {isAuth,loading }= UserData();
   const { user } = UserData();
@@ -43,6 +44,7 @@ const App = () => {
       <Route path="/Login" element={isAuth?<Home/>:<Login/>}/>
       <Route path="/Register" element={isAuth?<Home/>:<Register/>}/>
       <Route path="/Verify" element={isAuth?<Home/>:<Verify/>}/>
+      
       <Route
               path="/course/:id"
               element={isAuth ? <CourseDescription user={user} /> : <Login />}

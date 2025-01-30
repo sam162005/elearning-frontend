@@ -1,5 +1,5 @@
 .course-card {
-  background: linear-gradient(135deg, #ffffff, #e0ffe4); /* Subtle green gradient background */
+  background: linear-gradient(135deg, #ffffff, #cdcfcd); /* Subtle green gradient background */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 15px;
@@ -87,14 +87,15 @@
 
   .common-btn {
     display: inline-block;
-    margin-top: 15px;
+    margin: 15px 15px;
     padding: 10px 20px;
-    background-color: #25c759; /* Soft green for the button */
+    background: linear-gradient(45deg, #545352, #b5b4b1); /* Soft green for the button */
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     text-align: center;
+    
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transform to transition */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);

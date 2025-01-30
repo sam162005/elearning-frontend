@@ -14,7 +14,7 @@
     text-align: center;
     font-size: 28px;
     margin-bottom: 20px;
-    color: #138146; /* Matching green theme */
+    color: #383b39; /* Matching green theme */
   }
   
   .users-table {
@@ -34,7 +34,7 @@
   }
   
   .users-table th {
-    background-color: #56ab2f; /* Green header background */
+    background-color: #545553; /* Green header background */
     color: white;
     font-weight: bold;
   }
@@ -44,13 +44,14 @@
   }
   
   .users-table tr:hover {
-    background-color: #e7f9e6; /* Light green background on hover */
+    background-color: #bdbdbd; /* Light green background on hover */
   }
   
   .update-role-btn {
     padding: 8px 16px;
-    background-color: #138146; /* Green background */
-    color: white;
+    color: #dcdbd7;
+    background-color: rgb(50, 49, 49);
+    border: 1px solid;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -58,7 +59,9 @@
   }
   
   .update-role-btn:hover {
-    background-color: #56ab2f; /* Hover green effect */
+    color: rgb(50, 49, 49);
+    border: 2px solid rgb(50, 49, 49);
+    background-color: #dcdbd7;/* Hover green effect */
     transform: scale(1.05); /* Slight zoom effect on hover */
   }
   

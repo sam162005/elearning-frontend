@@ -55,7 +55,9 @@ const AdminUsers = ({ user }) => {
   return (
     <Layout>
       <div className="users">
-        <h1>All Users</h1>
+        <h1>ALL USERS</h1>
+        <br/>
+        <br/>
         <table className="users-table">
           <thead>
             <tr>

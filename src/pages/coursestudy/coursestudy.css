@@ -1,6 +1,6 @@
 .course-study-page {
     padding: 50px 20px;
-    background: linear-gradient(135deg, #a8ff78, #78ffd6); /* Matching green gradient theme */
+    background: rgb(216, 215, 215); /* Matching green gradient theme */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@
   
     h2, h4, h5 {
       font-size: 24px;
-      color: #2a6f47; /* Complementary green for headings */
+      color: #4d504e; /* Complementary green for headings */
       text-align: center;
       margin: 15px 0;
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Adds depth to text */
@@ -32,7 +32,7 @@
   
     a {
       text-decoration: none;
-      background-color: #e6f0e9; /* Soft green for buttons */
+      background-color: #e4e7e4; /* Soft green for buttons */
       color: white;
       padding: 10px 20px;
       border: none;

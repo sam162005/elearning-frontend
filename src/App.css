@@ -3,63 +3,137 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #a8ff78, #78ffd6); /* Green gradient theme */
+  background-color: #F5F5F5;
   color: #333;
 }
 
-.common-btn {
-  background-color: #2a6f47; /* Matching green button */
-  color: white;
-  padding: 12px 50px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+header nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: #333;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  color: #b2b2b8;
+}
+
+header .contact-btn {
+  background-color: #49494a;
+  color: #FFF;
+  padding: 10px 20px;
   border: none;
-  border-radius: 8px;
-  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+header .contact-btn:hover {
+  background-color: #A5A5A5;
+  color: #FFF;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #F9F9F9;
+  min-height: 90vh; /* Ensures each section fills most of the screen */
+}
+
+.hero-section .content {
+  max-width: 50%;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.hero-section .cta-btn {
+  background-color: #6552D0;
+  color: #FFF;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 20px;
-  margin-left: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.common-btn:hover {
-  color: #2a6f47; /* Invert colors */
-  background-color: #f1f1f1;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.hero-section .cta-btn:hover {
+  background-color: #A5A5A5;
 }
 
-.common-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+.hero-section .image {
+  max-width: 50%;
 }
 
-@media (max-width: 768px) {
-  .common-btn {
-    font-size: 16px;
-    padding: 10px 40px;
-  }
+.hero-section .image img {
+  max-width: 100%;
+  height: auto;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #152516; /* Darker green */
-  text-align: center;
-  margin-top: 50px;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+/* Partners Section */
+.partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #FFF;
+  min-height: 50vh;
 }
 
-p {
-  font-size: 1rem;
-  color: #152516; /* Complementary green */
-  text-align: center;
-  margin-top: 20px;
-  max-width: 600px;
-  line-height: 1.5;
-  margin-left: auto;
-  margin-right: auto;
+.partners img {
+  max-width: 150px;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
-.container {
-  text-align: center;
+.partners img:hover {
+  opacity: 1;
+}
+
+/* Remove unnecessary margins between sections */
+section {
+  padding: 60px 50px;
+  margin: 0;
+  min-height: 90vh; /* Each section takes the full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
   padding: 20px;
+  background: linear-gradient(135deg, #6552D0, #A5A5A5);
+  text-align: center;
+  color: #fff;
 }

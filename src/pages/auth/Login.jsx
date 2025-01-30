@@ -37,7 +37,8 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-
+          <br/>
+          <br/>
           <button disabled={btnLoading} type="submit" className="common-btn">
             {btnLoading ? "Please Wait..." : "Login"}
           </button>

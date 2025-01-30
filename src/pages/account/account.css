@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #a8ff78, #78ffd6);
+  background: hsla(210, 2%, 84%, 0.9); /* Updated background color from courses.css */
   padding: 20px;
 }
 
@@ -31,7 +31,7 @@
 /* Title styling */
 .profile-card h2 {
   font-size: 30px;
-  color: #2a6f47;
+  color: #152516; /* Updated text color from courses.css */
   margin-bottom: 20px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-weight: bold;
@@ -44,21 +44,22 @@
 /* Profile info styling */
 .profile-info p {
   font-size: 18px;
-  color: #4f4f4f;
+  color: #080c0a; /* Updated text color from courses.css */
   margin: 15px 0;
   line-height: 1.6;
 }
 
 .profile-info strong {
-  color: #3fa55b;
+  color: #313432; /* Updated color from courses.css */
 }
 
+/* Button styling */
 /* Button styling */
 .profile-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(45deg, #2a6f47, #78ffd6);
+  background: linear-gradient(45deg, #3fa55b, #5ec980); /* Green gradient for the main button */
   color: white;
   border: none;
   padding: 14px 40px;
@@ -68,7 +69,7 @@
   text-transform: uppercase;
   font-weight: bold;
   transition: all 0.3s ease;
-  margin: 15px 0; 
+  margin: 15px 0;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
@@ -92,33 +93,33 @@
 }
 
 .profile-btn:hover {
-  background: linear-gradient(45deg, #3b854f, #6ff7b6);
+  background: linear-gradient(45deg, #5ec980, #3fa55b); /* Hover gradient */
   transform: translateY(-3px);
 }
 
 .profile-btn:active {
   transform: translateY(0);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  margin: 15px 0; 
+  margin: 15px 0;
 }
 
 /* Admin button specific styling */
 .admin-btn {
-  background: linear-gradient(45deg, #e9a100, #ffc107);
+  background: linear-gradient(45deg, #545352, #dcdbd7); /* Yellow gradient */
 }
 
 .admin-btn:hover {
-  background: linear-gradient(45deg, #d48900, #ffb400);
+  background: linear-gradient(45deg, #545453, #cbc9c5); /* Darker yellow for hover */
 }
 
 /* Logout button styling */
 .logout-btn {
-  background: linear-gradient(45deg, #ff4b4b, #ff7676);
+  background: linear-gradient(45deg, #ff4b4b, #ff7676); /* Red gradient */
   margin-top: 20px;
 }
 
 .logout-btn:hover {
-  background: linear-gradient(45deg, #d93838, #ff6262);
+  background: linear-gradient(45deg, #d93838, #ff6262); /* Darker red for hover */
 }
 
 /* Icon styling */

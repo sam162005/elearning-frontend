@@ -1,7 +1,9 @@
 import React from "react";
 import "./about.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div className="about">
       <div className="about-content">
@@ -25,8 +27,11 @@ const About = () => {
           </ul>
         </div>
         <div className="cta-section">
-          <button className="explore-courses">Explore Courses</button>
-          <button className="contact-us">Contact Us</button>
+          
+        <button className="explore-courses" onClick={() => navigate("/courses")}>
+            Explore Courses
+          </button>
+          <button className="explore-courses" onClick={() => window.location.href = "mailto:samgiftson563@gmail.com?subject=Contact%20Us&body=Hello,%20I%20would%20like%20to%20inquire%20about..."}>Contact Us </button>
         </div>
       </div>
     </div>
