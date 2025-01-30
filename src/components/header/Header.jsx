@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
-import logoImage from "../../images/logo-removebg-preview.png"; // Import your logo image
+import logoImage from "../../images/logo-removebg-preview.png"; 
 
 const Header = ({ isAuth, user }) => {
   return (

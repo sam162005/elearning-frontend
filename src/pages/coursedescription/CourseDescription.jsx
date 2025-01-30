@@ -39,12 +39,12 @@ const CourseDescription = ({ user }) => {
     );
 
     const options = {
-      key: "rzp_test_CMsB4Ic9wCgo4O", // Enter the Key ID generated from the Dashboard
-      amount: order.id, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+      key: "rzp_test_CMsB4Ic9wCgo4O", 
+      amount: order.id, 
       currency: "INR",
-      name: "E learning", //your business name
+      name: "E learning", 
       description: "Learn with us",
-      order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+      order_id: order.id, 
  
       handler: async function (response) {
         const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =

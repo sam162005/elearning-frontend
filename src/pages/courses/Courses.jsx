@@ -7,15 +7,14 @@ const Courses = () => {
   const { courses } = CourseData();
   const [searchQuery, setSearchQuery] = useState(""); // State to hold the search query
 
-  // Extract unique categories
+
   const categories = [...new Set(courses.map((course) => course.category))];
 
-  // Sort courses by most purchases (descending)
+
   const popularCourses = [...courses]
     .sort((a, b) => b.purchases - a.purchases)
     .slice(0, 5);
 
-  // Filter courses based on search input
   const filteredCourses = courses.filter((course) =>
     course.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -24,7 +23,6 @@ const Courses = () => {
     <div className="courses">
       <h2>Available Courses</h2>
 
-      {/* Search Bar */}
       <div className="search-bar">
         <input
           type="text"
@@ -34,7 +32,7 @@ const Courses = () => {
         />
       </div>
 
-      {/* Show Search Results Only When Searching */}
+ 
       {searchQuery && filteredCourses.length > 0 && (
         <div className="filtered-courses">
           <h3>Search Results</h3>
@@ -46,7 +44,6 @@ const Courses = () => {
         </div>
       )}
 
-      {/* Popular Courses Section */}
       <div className="popular-courses">
         <h3>Popular Courses</h3>
         <div className="course-container">
@@ -60,7 +57,6 @@ const Courses = () => {
         </div>
       </div>
 
-      {/* Course Categories Section */}
       <div className="course-categories">
         {categories.map((category, index) => {
           const categoryCourses = filteredCourses.filter(
