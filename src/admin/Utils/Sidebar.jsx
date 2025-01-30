@@ -44,7 +44,7 @@ const Sidebar = () => {
             <div className="icon">
               <AiOutlineLogout />
             </div>
-            <span>Logout</span>
+            <span>Back</span>
           </Link>
         </li>
       </ul>
